@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 col-fix">
+                <img src="img/img3/Picture22.png" class="pictureofpro">
+            </div>
+            <div class="col-sm-8 col-fix">
+                <p class="Prodetail-name">Rose Stone Lotus</p>
+                <p class="Prodetail-price">Price: 10.88$</p>
+                <div class="Prodetail-care">
+                    <p class="title">How to care:</p>
+                    <p>Light Belongs to the line of sun-loving plants, but to have good green trees and lots of leaves, you should plant them in a sunny, cool place. If you want to plant to see flowers and fruits, you should plant in full sun Temperature The most suitable temperature for the Singapore Bang tree is from 16 - 35° C. Below 5°C the tree can die and lose its leaves, if you leave it outside in extreme heat, too hot or too cold, you should cover the tree or move the tree to a sheltered place</p>
+                </div>
+
+                <p class="Prodetail-des">Description:The tree has broad foliage, the leaves are very large, round, ovate and full of dark green color. The surface of the rough leaves is not as smooth as Bang's in Vietnam, the leaves have a distinct herringbone shape near the leaves. The length of the leaves is up to 38 cm and the width is about 22 cm. In particular, Bang Sing rarely sheds leaves.</p>
+            </div>
+
+        </div>
+    </div>
+    <center>
+        <div class="container-fluid">
+            <div class="row hangduoi">
+                <div class="col-sm-3 ">
+                    <div class="product-item">
+                       <img src="img/img3/Picture20.png" class="picture">
+                                <p class="product-item_name">Brown Stone Lotus</p>
+                                <p class="product-item_price">15.31$</p>
+                                <div class="sizechoose">
+                                    <p class="size">Type:</p>
+                                    <button class="btn-size btn-warning">Seed</button>
+                                    <button class="btn-size btn-success">Tree</button>
+                        </div>
+                        <div class="icon">
+
+
+                        </div>
+                        <div class="btntosale">
+                            <button class="btn btn-success btn-sale">Details</button>
+
+                            <button class="btn btn-primary btn-sale2">Sale<i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="product-item">
+                
+                        <img src="img/img3/Picture21.png" class="picture">
+                        <p class="product-item_name">Buddha Stone Lotus</p>
+                        <p class="product-item_price">18.64$</p>
+                        <div class="sizechoose">
+                            <p class="size">Type:</p>
+                            <button class="btn-size btn-warning">Seed</button>
+                            <button class="btn-size btn-success">Tree</button>
+                        </div>
+                        <div class="icon">
+
+
+                        </div>
+                        <div class="btntosale">
+                            <button class="btn btn-success btn-sale">Details</button>
+
+                            <button class="btn btn-primary btn-sale2">Sale<i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="product-item">
+                        <img src="img/img3/Picture19.png" class="picture">
+                        <p class="product-item_name">Stone Diamond Lotus</p>
+                        <p class="product-item_price">12$</p>
+                        <div class="sizechoose">
+                            <p class="size">Type:</p>
+                            <button class="btn-size btn-warning">Seed</button>
+                            <button class="btn-size btn-success">Tree</button>
+                        </div>
+                        <div class="icon">
+
+
+                        </div>
+                        <div class="btntosale">
+                            <button class="btn btn-success btn-sale">Details</button>
+
+                            <button class="btn btn-primary btn-sale2">Sale<i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="product-item">
+                        <img src="img/img3/Picture23.png" class="picture">
+                        <p class="product-item_name">Dragon Claw Lotus</p>
+                        <p class="product-item_price">9.34$</p>
+                        <div class="sizechoose">
+                            <p class="size">Type:</p>
+                            <button class="btn-size btn-warning">Seed</button>
+                            <button class="btn-size btn-success">Tree</button>
+                        </div>
+                        <div class="icon">
+
+
+                        </div>
+                        <div class="btntosale">
+                            <button class="btn btn-success btn-sale">Details</button>
+
+                            <button class="btn btn-primary btn-sale2">Sale<i
+                                    class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+<script>
+    var header = document.getElementById('header');
+    var mobileMenu1 = document.getElementById('mobile-menu');
+    console.log(mobileMenu1);
+    var headerHeight = header.clientHeight;
+
+    //close menu
+    mobileMenu1.onclick = function () {
+        var isClosed = header.clientHeight === headerHeight;
+        if (isClosed) {
+            header.style.height = '570px';
+        } else {
+            header.style.height = null;
+        }
+    }
+
+    //auto close click select
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    for (var i = 0; i < menuItems.length; i++) {
+        var menuItem = menuItems[i];
+
+        menuItem.onclick = function () {
+            var isParenMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+            if (isParenMenu) {
+                event.preventDefault();
+            } else {
+                header.style.height = null;
+            }
+        }
+    }
+</script>
+
+<script>
+    $(function () {
+        $("body").on("click", "a", function () {
+            var att = $(this).attr("href");
+            var filter = att.slice(1, att.length);
+            console.log(filter);
+            $("#div-load").load(filter);
+        });
+    });
+</script>
+<script>
+
+</script>
+
+</html>
